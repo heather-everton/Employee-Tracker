@@ -24,4 +24,5 @@ VALUES
   ('Huck', 'Finn', 3, 2),
   ('Jane', 'Austen', 4, null),
   ('Elizabeth', 'Bennett', 5, 4),
-  ('Anne', 'Shirley', 6, 4);
+  ('Anne', 'Shirley', 6, 4),
+  ('Atticus', 'Finch', 7, 4);

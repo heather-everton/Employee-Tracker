@@ -331,14 +331,14 @@ function lookupEmployee() {
 function lookupNewRole(employeeChoices) {
   console.log("lookup up roles!")
 
-  var query =`SELECT title, id FROM role`
+  var query =`SELECT title AS name, id FROM role`
 
   connection.query(query, function (err, res) {
     console.log(res)
     if (err) throw err;
 
-    const newRoleChoices = res.map(({title, id}) => ({
-      title: title,
+    const newRoleChoices = res.map(({name, id}) => ({
+      name: name,
       value: id
     }));
 
